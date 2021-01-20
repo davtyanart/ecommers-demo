@@ -1,17 +1,14 @@
-import './App.css';
+import './styles/App.scss';
 import Layout from './components/Layout/Layout';
-import Footer from './containers/Footer/Footer';
 import Header from './containers/Header/Header';
+import Auth from './containers/Authentication/Auth';
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Layout>
-        <main className='app-main-content'>
-          <span>Products</span>
-        </main>
-        <Footer />
+        <Auth />
       </Layout>
     </div>
   );
